@@ -2,6 +2,11 @@ export function pago(listado,i,arrayJuego,enviarDatos){
     let content=document.querySelector(".lista2")
     let precios=document.querySelectorAll(".precios")
 
+    let trDatos2=document.querySelectorAll(".tr-datos2")
+    trDatos2.forEach(element => {
+        content.removeChild(element)
+    });
+
     listado.forEach(element => {
         content.innerHTML+=`
         <option class="tr-datos2 value="${element.cdn}">

@@ -25,7 +25,7 @@ export function listarClientes(listados){
                 <td>${element.nacionalidad}</td>
                 <td>${element.puntos}</td>
                 <td><button class="btn btn-danger trash"  ><i class="bi bi-trash"></i></button></td>
-                <td><button class="btn btn-success edit" data-bs-toggle="modal" data-bs-target="#exampleModal" ><i class="bi bi-pencil-square"></i></button></td>
+                <td><button class="btn btn-success edit" data-bs-toggle="modal" data-bs-target="#exampleModal3" ><i class="bi bi-pencil-square"></i></button></td>
 
 
             </tr>`

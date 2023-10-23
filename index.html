@@ -13,7 +13,7 @@
         <div class="menu">
             <nav class="navbar navbar-expand-lg container">
                 <div class="container-fluid">
-                    <a class="navbar-brand text-white fs-4" href="#">LOGO</a>
+                    <a class="navbar-brand text-white fs-4" href="#">Video<span>Game</span></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -31,7 +31,7 @@
             </nav>
         </div>
         <div class="container mt-5 d-flex justify-content-end">
-            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><i class="bi bi-plus"></i>Agregar</button>
+            <button type="button" class="btn ag" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><i class="bi bi-plus"></i>Agregar</button>
         </div>
 
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -72,7 +72,7 @@
             </div>
             </div>
 
-            <table class="table text-center container">
+            <table class=" mt-5 text-center container">
                 <thead>
                 <tbody class="lista">
     
@@ -100,21 +100,25 @@
                         <div class="existencia">
 
                         </div>
-                        <div class="comprar mb-3 mt-3">
-                            <h4>Precio: <span class="precios"></span></h4>
-                            <h4>Precio + impuesto:<span class="precios"></span></h4>
-                            <h4>Precio + impuesto + IVA: <span class="precios"></span></h4>
-                        </div>
+                        <table class="table border mt-3">
+                            <tr class="text-center">
+                                <th>Precio</th>
+                                <th>Precio + impuesto</th>
+                                <th>Precio + impuesto + IVA</th>
+                            </tr>
+                            <tr class="comprar mb-3 mt-3 text-center">
+                                <td><span class="precios"></span></td>
+                                <td><span class="precios"></span></td>
+                                <td><span class="precios"></span></td>
+                            </tr>
+                        </table>
 
                         </form>
                         <div class="d-flex justify-content-center">
-                            <button class="btn btn-dark mb-3 w-75" id="compra">Comprar</button>
+                            <button class="btn btn-dark mb-3 w-75" id="compra" data-bs-dismiss="modal">Comprar</button>
                         </div>
                     </div>
-                    <!-- <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-primary enviarJuego" data-bs-dismiss="modal">enviar</button>
-                    </div> -->
+
                     </div>
                 </div>
                 </div>

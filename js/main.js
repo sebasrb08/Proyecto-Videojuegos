@@ -12,7 +12,6 @@ import { enviarDatosClientes } from "./localStorage/enviarDatosClientes.js";
 let enviarJuego = document.querySelector(".enviarJuego")
 let arrayJuegos=guardarDatosJuegos()
 let arrayClientes = guardarDatosClientes()
-
 mostrarJuegos(arrayJuegos)
 
 let trash = document.querySelectorAll(".trash")
@@ -23,6 +22,26 @@ enviarJuego.addEventListener("click",()=>{
     agregarJuego(VideoJuego,arrayJuegos,enviarDatosJuegos)
     resetear()
     mostrarJuegos(arrayJuegos)
+
+    let trash = document.querySelectorAll(".trash")
+    let tr = document.querySelectorAll(".tr-datos")
+
+    for (let i = 0; i < trash.length; i++) {  
+        trash[i].addEventListener("click",()=>{
+            console.log("hola")
+            eliminar(i,arrayJuegos,enviarDatosJuegos)
+            location.reload();
+            // resetear()
+            // listarClientes(arrayClientes)
+        })
+    }
+    
+    
+    for (let i = 0; i < tr.length; i++) {
+        tr[i].addEventListener("click",()=>{
+            pago(arrayClientes,i,arrayJuegos,enviarDatosClientes)
+        })
+    }
 })
 
 for (let i = 0; i < trash.length; i++) {  
@@ -35,7 +54,8 @@ for (let i = 0; i < trash.length; i++) {
     })
 }
 
-for (let i = 0; i < tr.length; i++) {  
+
+for (let i = 0; i < tr.length; i++) {
     tr[i].addEventListener("click",()=>{
         pago(arrayClientes,i,arrayJuegos,enviarDatosClientes)
     })
