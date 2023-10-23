@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-100:#8B5FBF;
+--primary-200:#61398F;
+--primary-300:#FFFFFF;
+--accent-100:#D6C6E1;
+--accent-200:#9A73B5;
+--text-100:#4A4A4A;
+--text-200:#878787;
+--bg-100:#F5F3F7;
+--bg-200:#E9E4ED;
+--bg-300:#FFFFFF;
+  
+}
+.agregar{
+    background-color: var(--accent-200);
+}
+.no_existe{
+    text-align: center;
+    font-size: 3em;
+    
+}
+input{
+    border: var(--accent-200) solid 2px;
+}
+.menu{
+    background-color: var(--primary-200);
+    color: var(--bg-100);
+}

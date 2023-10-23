@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/clientes.css">
+</head>
+<body>
+    <div class="container2">
+        <div class="menu">
+            <nav class="navbar navbar-expand-lg container">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-white fs-4" href="../index.html">LOGO</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav  w-100 d-flex justify-content-end">
+                            <li class="nav-item">
+                                    <a class="nav-link text-white fs-5" href="../index.html">VideoJuegos</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-white fs-5" aria-current="page" href="./clientes.html">Clientes</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container menu_second d-flex gap-2 mt-5">
+            <div class="title w-25">
+                <h2>Productos</h2>
+            </div>
+            <div class="conten__menu ">
+                <button type="button" class="btn agregar" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><i class="bi bi-plus"></i>Agregar</button>
+            </div>
+            <div class="buscar ">
+                <input class="form-control me-2" id ="search" type="search" placeholder="Search" aria-label="Search">
+            </div>
+        </div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                <div class="mb-3">
+                    <label for="id" class="col-form-label">Numero de Identificacion</label>
+                    <input type="number" class="form-control infoInputs" id="id">
+                </div>
+                <div class="mb-3">
+                    <label for="nombre" class="col-form-label">Nombre</label>
+                    <input type="text" class="form-control infoInputs" id="nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="apellido" class="col-form-label">Apellido</label>
+                    <input type="text" class="form-control infoInputs" id="apellido">
+                </div>
+                <div class="mb-3">
+                    <label for="telefono" class="col-form-label">Telefono</label>
+                    <input type="number" class="form-control infoInputs" id="telefono">
+                </div>
+                <div class="mb-3">
+                    <label for="correo" class="col-form-label">Correo Electronico</label>
+                    <input type="email" class="form-control infoInputs" id="correo">
+                </div>
+                <div class="mb-3">
+                    <label for="fecha" class="col-form-label">Fecha de nacimiento</label>
+                    <input type="date" class="form-control infoInputs" id="fecha">
+                </div>
+                <div class="mb-3">
+                    <label for="nacionalidad" class="col-form-label">Nacionalidad</label>
+                    <input type="text" class="form-control infoInputs" id="nacionalidad">
+                </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary enviarClientes" data-bs-dismiss="modal">enviar</button>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <table class="table text-center container">
+            <thead>
+              <tr>
+                  <th scope="col">CDN</th>
+                  <th scope="col">Nombre</th>
+                  <th scope="col">Apellido</th>
+                  <th scope="col">Telefono</th>
+                <th scope="col">Email</th>
+                <th scope="col">Fecha de nacimiento</th>
+                <th scope="col">Nacionalidad</th>
+                <th scope="col">Puntos</th>
+
+              </tr>
+            </thead>
+            <tbody class="lista">
+
+            </tbody>
+          </table>
+          <div class="existencia">
+
+          </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script type="module" src="../js/clientes.js"></script>
+</body>
+</html>
