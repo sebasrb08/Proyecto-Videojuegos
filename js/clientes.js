@@ -15,7 +15,6 @@ listarClientes(arrayClientes)
 
 let infoInputs=document.querySelectorAll(".infoInputs")
 let enviarClientes =document.querySelector(".enviarClientes")
-let fade =document.querySelector(".fade")
 let search2 =document.querySelector("#search")
 let eliminar2= document.querySelectorAll(".trash")
 let edit= document.querySelectorAll(".edit")
@@ -37,11 +36,11 @@ for (let i = 0; i < eliminar2.length; i++) {
         // listarClientes(arrayClientes)
     })
 }
-edit.forEach(element => {
-    element.addEventListener("click",()=>{
-        editar(element,arrayClientes)
+for (let index = 0; index < edit.length; index++) {
+    edit[index].addEventListener("click",()=>{
+        editar(index,arrayClientes,edit[index])
     })
-});
+}
 
 search2.addEventListener("keyup",()=>{
     search(search2,arrayClientes)

@@ -33,3 +33,6 @@ tr:hover{
 span{
     color: var(--primary-100);
 }
+.table{
+    border: solid 1px gray;
+}
