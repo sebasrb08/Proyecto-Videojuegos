@@ -25,6 +25,27 @@ enviarClientes.addEventListener("click",()=>{
     resetear()
     listarClientes(arrayClientes)
     vaciar(infoInputs)
+    let eliminar2= document.querySelectorAll(".trash")
+    let edit= document.querySelectorAll(".edit")
+    let search2 =document.querySelector("#search")
+
+    for (let i = 0; i < eliminar2.length; i++) {  
+        eliminar2[i].addEventListener("click",()=>{
+            eliminar(i,arrayClientes,enviarDatosClientes)
+            location.reload();
+            // resetear()
+            // listarClientes(arrayClientes)
+        })
+    }
+    for (let index = 0; index < edit.length; index++) {
+        edit[index].addEventListener("click",()=>{
+            editar(index,arrayClientes,edit[index])
+        })
+    }
+
+    search2.addEventListener("keyup",()=>{
+        search(search2,arrayClientes)
+    })
 })
 
 for (let i = 0; i < eliminar2.length; i++) {  

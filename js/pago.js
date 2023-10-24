@@ -10,7 +10,7 @@ export function pago(listado,i,arrayJuego,enviarDatos){
     listado.forEach(element => {
         content.innerHTML+=`
         <option class="tr-datos2 value="${element.cdn}">
-            <div>${element.cdn}</div>
+            <div>${element.cdn} - ${element.nombre}</div>
         </option>
         `
     });

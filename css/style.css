@@ -36,3 +36,7 @@ span{
 .table{
     border: solid 1px gray;
 }
+#compra{
+    background-color: var(--accent-200);
+    color: white;
+}
